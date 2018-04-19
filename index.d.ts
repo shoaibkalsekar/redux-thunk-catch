@@ -11,6 +11,6 @@ declare module "redux" {
 
 declare type ErrorHandler = (error: any, state: any, action: any, dispatch: any) => void;
 
-declare const createThunkMiddleware: (errorHandler: ErrorHandler, extraArgument: any) => Middleware;
+declare const createThunkMiddleware: (errorHandler: ErrorHandler, extraArgument?: any) => Middleware;
 
 export default createThunkMiddleware;
